@@ -3,7 +3,7 @@ body {
   background: -webkit-linear-gradient(bottom, #222840, #e1f7fb);
   background: -moz-linear-gradient(bottom, #222840, #e1f7fb);
   background: linear-gradient(to top, #222840, #e1f7fb);
-  
+  margin: 0;
 }
 
 h1 {
@@ -19,7 +19,9 @@ p {
 }
 
 
-
+.z {
+  z-index: 1;
+}
 
 
 footer {
@@ -40,7 +42,7 @@ footer p {
   background-color: rgb(210, 231, 248);
 }
 
-.container {
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
