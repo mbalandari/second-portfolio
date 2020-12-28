@@ -18,38 +18,9 @@ p {
   color: #580909;
 }
 
-.lets {
-  display: inline-block;
-  border: 0;
-  /* width: 196px; */
-  /* height: 200px; */
-  position: relative;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1);
-  transition: all 200ms ease-in;
-  transform: scale(1);
-}
 
-.lets:hover {
-  box-shadow: 0px 0px 150px #000000;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.5);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.5);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.5);
-  transition: all 200ms ease-in;
-  transform: scale(2);
-}
 
-.z {
-  z-index: 0;
-}
+
 
 footer {
   text-align: center;
@@ -63,21 +34,213 @@ footer p {
   color: white;
 }
 
-.col-md-auto > a {
-  text-decoration: none;
-}
+
 
 .bg {
   background-color: rgb(210, 231, 248);
 }
 
-.res {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  align-content: space-around;
 
+.box1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-style: ridge;
+  background-color: rgb(240, 209, 182);
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-style: ridge;
+  background-color: rgb(184, 149, 176);
+}
+
+.box3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-style: ridge;
+  background-color: rgb(110, 196, 132);
+}
+
+.item {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 50px;
+  
+}
+
+.list {
+  border-radius: 20px;
+ 
+  margin: 0px 30px 50px;
+  background-color: rgb(103, 151, 124);
+  text-align-last: center;
+}
+
+.item:hover {
+  background-color: rgba(196, 214, 115, 0.4);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(22, 67, 68, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  font-family: "Oswald", sans-serif;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(13, 80, 74);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 102%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
