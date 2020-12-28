@@ -1,0 +1,83 @@
+body {
+  background: #222840;
+  background: -webkit-linear-gradient(bottom, #222840, #e1f7fb);
+  background: -moz-linear-gradient(bottom, #222840, #e1f7fb);
+  background: linear-gradient(to top, #222840, #e1f7fb);
+  
+}
+
+h1 {
+  color: rgb(49, 85, 85);
+}
+
+h2 {
+  color: rgb(187, 206, 198);
+}
+
+p {
+  color: #580909;
+}
+
+.lets {
+  display: inline-block;
+  border: 0;
+  /* width: 196px; */
+  /* height: 200px; */
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.lets:hover {
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(2);
+}
+
+.z {
+  z-index: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 30px 5px;
+  color: white;
+  font-size: 14px !important;
+  background-color: rgb(28, 66, 97);
+}
+
+footer p {
+  color: white;
+}
+
+.col-md-auto > a {
+  text-decoration: none;
+}
+
+.bg {
+  background-color: rgb(210, 231, 248);
+}
+
+.res {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.container {
+  align-content: space-around;
+
+}
