@@ -711,7 +711,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .logo img {
-    height: 25px;
+    height: 35px;
   }
 
   .inbox {
