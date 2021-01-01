@@ -100,7 +100,7 @@ a {
   height: 70vh;
   /* padding: 20px; */
   background-image: url(images/hero.jpg);
-  background-size: cover;
+  background-size: 100% 100%;;
   background-color: rgb(3, 3, 3);
 }
 
@@ -113,12 +113,6 @@ a {
 .col {
   display: flex;
   flex-direction: column;
-}
-
-.headpic {
-  width: 100%;
-
-  object-fit: cover;
 }
 
 .col1 {
@@ -687,5 +681,15 @@ body {
 @media all and (max-width: 700px) {
   .myP {
     padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    height: 15px;
+  }
+
+  .inbox {
+    background-image: url(images/hero2.jpg);
   }
 }
