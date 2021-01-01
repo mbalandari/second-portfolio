@@ -11,17 +11,13 @@ h2 {
   color: rgb(248, 199, 244);
 }
 
-p {
-  color: #580909;
-}
-
 footer {
   text-align: center;
   padding: 50px 30px 5px;
   color: white;
   font-size: 14px !important;
   background-color: #b3e4f2;
-background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%234086bf' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%234086bf' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 footer p {
@@ -97,11 +93,40 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 70vh;
+  height: 550px;
   /* padding: 20px; */
   background-image: url(images/hero.jpg);
-  background-size: 100% 100%;;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgb(3, 3, 3);
+}
+
+.txt1 {
+  position: absolute;
+  top: 230px;
+  left: 10px;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+
+
+.st1 {
+  font-family: "Goldman", cursive;
+  color: #802456;
+  font-size: 30px;
+}
+
+.st2 {
+  font-family: 'Audiowide', cursive;
+  color: #FF0000;
+  font-size: 20px;
+}
+
+.st3 {
+  font-family: 'Baloo 2', cursive;
+  color: #0047ab;
+  font-size: 25px;
 }
 
 .mix {
@@ -123,7 +148,7 @@ a {
   margin: 10px 10px 5px 10px;
   border: 5px solid #d4af37;
   border-radius: 25px;
-  background-color:rgb(27, 201, 207);
+  background-color: rgb(27, 201, 207);
 }
 
 .col1:hover {
@@ -138,7 +163,7 @@ a {
   margin: 5px 10px 10px 10px;
   border: 5px solid #d4af37;
   border-radius: 25px;
-  background-color:rgb(215, 224, 87);
+  background-color: rgb(215, 224, 87);
 }
 
 .col2:hover {
@@ -153,7 +178,7 @@ a {
   margin: 10px;
   border: 5px solid #d4af37;
   border-radius: 25px;
-  background-color:rgb(27, 201, 207);
+  background-color: rgb(27, 201, 207);
 }
 
 .maz:hover {
