@@ -11,6 +11,10 @@ h2 {
   color: rgb(248, 199, 244);
 }
 
+h3 {
+  color: #84d4d4;
+}
+
 footer {
   text-align: center;
   padding: 50px 30px 5px;
@@ -209,11 +213,11 @@ a {
 }
 
 .tcert {
-  background-color: rgba(51, 110, 112, 0.1);
+  background-color: rgba(51, 110, 112, 0.3);
 }
 
 .tcert:hover {
-  background-color: rgba(51, 110, 112, 0.5);
+  background-color: rgba(51, 110, 112, 0.6);
 }
 
 .item:hover {
@@ -790,8 +794,23 @@ body {
     height: 95vh;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url(images/backCert.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .box1 {
+    
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(images/backbox1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
 }
+
