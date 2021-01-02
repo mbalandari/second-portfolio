@@ -213,12 +213,16 @@ a {
   background-color: rgba(51, 110, 112, 0.3);
 }
 
-.tcert:hover {
-  background-color: rgba(51, 110, 112, 0.6);
+@media (hover: hover) {
+  .tcert:hover {
+    background-color: rgba(51, 110, 112, 0.6);
+  }
 }
 
-.item:hover {
-  background-color: rgba(196, 214, 115, 0.4);
+@media (hover: hover) {
+  .item:hover {
+    background-color: rgba(196, 214, 115, 0.5);
+  }
 }
 
 /* The Modal (background) */
@@ -744,8 +748,6 @@ body {
   }
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .logo img {
     height: 50px;
@@ -863,4 +865,3 @@ body {
     font-size: 12px; /* Increase font size */
   }
 }
-
