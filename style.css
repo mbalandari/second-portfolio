@@ -166,8 +166,10 @@ a {
   background-color: rgb(215, 224, 87);
 }
 
-.col2:hover {
-  background-image: url(images/mining-b.jpg.png);
+@media (hover: hover) {
+  .col2:hover {
+    background-image: url(images/mining-b.jpg.png);
+  }
 }
 
 .maz {
@@ -181,8 +183,10 @@ a {
   background-color: rgb(27, 201, 207);
 }
 
-.maz:hover {
-  background-image: url(images/codingmaz-b.jpg);
+@media (hover: hover) {
+  .maz:hover {
+    background-image: url(images/codingmaz-b.jpg);
+  }
 }
 
 .break {
@@ -722,12 +726,44 @@ body {
     display: none;
   }
 
+  .col {
+    justify-content: flex-start;
+  }
+
+  .mix {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .col1 {
     background-image: url(images/data-m2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 600;
+    width: 100%;
     height: 900;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .col2 {
+    background-image: url(images/mining-m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .maz {
+    background-image: url(images/codingmaz-b.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
     margin: 0;
     border: 0;
     border-radius: 0;
