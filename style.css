@@ -106,10 +106,8 @@ a {
   top: 230px;
   left: 10px;
   font-size: 20px;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
-
-
 
 .st1 {
   font-family: "Goldman", cursive;
@@ -118,13 +116,13 @@ a {
 }
 
 .st2 {
-  font-family: 'Audiowide', cursive;
-  color: #FF0000;
+  font-family: "Audiowide", cursive;
+  color: #ff0000;
   font-size: 20px;
 }
 
 .st3 {
-  font-family: 'Baloo 2', cursive;
+  font-family: "Baloo 2", cursive;
   color: #0047ab;
   font-size: 25px;
 }
@@ -151,8 +149,10 @@ a {
   background-color: rgb(27, 201, 207);
 }
 
-.col1:hover {
-  background-image: url(images/data-b.jpg.png);
+@media (hover: hover) {
+  .col1:hover {
+    background-image: url(images/data-b.jpg.png);
+  }
 }
 
 .col2 {
@@ -722,4 +722,14 @@ body {
     display: none;
   }
 
+  .col1 {
+    background-image: url(images/data-m2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600;
+    height: 900;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+  }
 }
